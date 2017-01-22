@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="0dp"
+        android:background="#f6f6f6">
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/button_close"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/title"
+                android:text="백승환"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="50dp"/>
+
+            <TextView
+                android:id="@+id/singer"
+                android:text="sweet love"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="25dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="@drawable/back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/mainCircle"
+                android:padding="20dp"
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:layout_gravity="center"
+                android:src="@drawable/image_baekseunghwan"/>
+
+            <LinearLayout
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:background="#EAEAEA"
+                android:padding="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <SeekBar
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/seekbar"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/songWrite"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="
+                    asdknfkasndfklasdklf
+                asdklnfaklsdnfkl;asndfkla
+                asndf;lkansdklf;naskldkl;asd
+                a;sndfklasdklfnasld;kfaaaaa1
+                a;sndfklasdklfnasld;kfaaaaa2
+                a;sndfklasdklfnasld;kfaaaaa3
+                a;sndfklasdklfnasld;kfaaaaa4
+                a;sndfklasdklfnasld;kfaaaaa5
+                a;sndfklasdklfnasld;kfaaaaa6
+                a;sndfklasdklfnasld;kfaaaaa7
+                a;sndfklasdklfnasld;kfaaaaa8
+                a;sndfklasdklfnasld;kfaaaaa9
+                a;sndfklasdklfnasld;kaaaaaa10
+                a;sndfklasdklfnasld;aaaaaaa11
+                a;sndfklasdklfnasld;kfaaaaa12
+                a;sndfklasdklfnasld;kfaaaaa13
+                a;sndfklasdklfnasld;kfaaaaa14"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#353535">
+
+        <ImageButton
+            android:background="@android:color/transparent"
+            android:id="@+id/pre"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/button_fast_forward_left"/>
+
+        <ImageButton
+            android:background="@android:color/transparent"
+            android:id="@+id/play"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/button_play_with_fast_forward"/>
+
+        <ImageButton
+            android:background="@android:color/transparent"
+            android:id="@+id/next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/button_fast_forward_right"/>
+
+    </LinearLayout>
+</LinearLayout>

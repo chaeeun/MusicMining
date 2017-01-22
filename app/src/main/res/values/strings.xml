@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Music Mining</string>
+    <string name="facebook_app_id"></string>
+    <string name="server_client_id"></string>
+
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password </string>
+    <string name="registration_button">Register</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">Contacts permissions are needed for providing email completions.</string>
+    <string name="no_text"> </string>
+    <string name="registration_message">You are not registered yet.  Use the registration button to complete your registration.</string>
+    <string name="registration_failed">Your email or password is already in use</string>
+
+
+    <string name="title_1">Cool card</string>
+    <string name="title_2">Ok card</string>
+    <string name="title_3">Bad card</string>
+    <string name="title_4">Ugly card</string>
+
+    <string name="text_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Etiam eget ligula eu lectus lobortis condimentum.</string>
+
+</resources>

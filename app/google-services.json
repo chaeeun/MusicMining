@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "295725518111",
+    "project_id": "firebase-musicm"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295725518111:android:c077f445bfd1618f",
+        "android_client_info": {
+          "package_name": "music_m.music_mining"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295725518111-tvt36sjdonlb7qmu3a2tvjebm0jtdfcg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "music_m.music_mining",
+            "certificate_hash": "9B4F597A4BB7A704EE4D232FFF1BC2519C90DCCA"
+          }
+        },
+        {
+          "client_id": "295725518111-dkg9gf11854mktv18ocr7j795n3tbcrd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAprPa5P2uHOQNORjo4pMxBECY2SYGXJdY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_song__infomation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_nocircle"
+    tools:context="music_m.music_mining.Song_Detail.Song_Infomation"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <!--- topPanel   -->
+    <!---  곡제목,가수이름,프로필사진  -->
+    <LinearLayout
+        android:layout_weight="3.3"
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#aaffffff">
+
+            <!---엑스박스-->
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:id="@+id/xButton"
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/button_close"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+
+                >
+                <!--- 노래제목 -->
+                <TextView
+                    android:id="@+id/songname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginBottom="10dp"
+                    android:text=" "
+                    android:textSize="35sp"
+                    android:textColor="#000000"
+                    />
+
+                <!--- 가수이름  -->
+                <TextView
+                    android:id="@+id/singername"
+                    android:layout_alignBottom="@id/songname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text=" "
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    />
+
+                <!--- 가수프로필 -->
+                <ImageView
+                    android:id="@+id/profileimage"
+                    android:layout_alignBottom="@id/singername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitCenter"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!--- bottomPanel -->
+    <!--- 좋아요버튼,가수이름,공유버튼/가사,연관콘텐츠,정보 폴더 -->
+    <!--- 가사창 -->
+    <LinearLayout
+        android:layout_weight="6.7"
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--- 중앙 왼쪽 하트버튼 -->
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:id="@+id/likeButton"
+                android:layout_alignParentLeft="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/button_like" />  <!--- 하트버튼 받으면 수정해야 할 곳 -->
+
+            <!--- 중앙 오른쪽 공유버튼 -->
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:id="@+id/shareButton"
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/button_sharing"/>  <!--- 공유버튼 받으면 수정해야 할 곳 -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/singername2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text=" "
+                    android:textSize="22sp"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    />
+
+                <!--- *********************************************************************** -->
+                <!--- 가사,연관콘텐츠,정보 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="9"
+                    android:layout_marginBottom="9dp"
+                    >
+
+
+                    <!--- 가사(폴더) -->
+                    <LinearLayout
+                        android:layout_weight="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:text="가사"
+                            android:textSize="14sp"
+                            />
+                    </LinearLayout>
+
+
+                    <!--- 연관콘텐츠(폴더) -->
+                    <LinearLayout
+                        android:layout_weight="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+                        <TextView
+                            android:id="@+id/contentTextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:text="연관 콘텐츠"
+                            android:textSize="14sp"
+                            />
+                    </LinearLayout>
+
+
+                    <!--- 정보(폴더) -->
+                    <LinearLayout
+                        android:layout_weight="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+                        <TextView
+                            android:id="@+id/infoTextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:text="정보"
+                            android:textSize="14sp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffffff" />
+
+        <!--- *************************가사창********************************************* -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!--- 제목 & 가수 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/song_singer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="25sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#ffffff"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/writers"
+                        android:text="작사: ㅣ 작곡: "
+                        android:textSize="11sp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:textColor="#ffffff"
+                        />
+                </LinearLayout>
+
+
+                <!--- 가사 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+
+                        android:textSize="13sp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:textColor="#ffffff"
+                        android:id="@+id/textLyrics" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
+

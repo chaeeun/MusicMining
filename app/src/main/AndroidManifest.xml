@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="music_m.music_mining">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".application.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_main_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data android:name="com.kakao.sdk.AppKey" android:value="" />
+
+        <activity android:name=".login.LoginActivity"></activity>
+        <activity
+            android:name=".login.SplashActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".movie.MainActivity" android:theme="@style/AppTheme" />
+        <activity android:name=".test" />
+        <activity android:name=".play.Play" />
+        <activity android:name=".list.MainList" />
+        <activity android:name=".make_id.MuicMining_Join" />
+        <activity android:name=".make_id.MusicMining_FindPassword" />
+        />
+        <activity android:name=".Song_Detail.Song_Infomation"></activity>
+        <activity android:name=".kakao.KakaoSignupActivity"/>
+        <activity android:name=".list.MyPlayList"></activity>
+
+    </application>
+
+</manifest>
