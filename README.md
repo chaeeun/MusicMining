@@ -8,5 +8,5 @@
 
 | Gif | Video |
 | --- | --- |
-| ![MusinMining_animated](music_mining_video.gif)  | [![VIDEO]()](https://www.youtube.com/watch?v=PS1XwVhhoNI&feature=youtu.be) |
+| [![VIDEO](video_main_mini.jpeg)](https://www.youtube.com/watch?v=PS1XwVhhoNI&feature=youtu.be) |![MusinMining_animated](music_mining_video.gif)  |
   
