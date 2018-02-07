@@ -9,7 +9,7 @@
 
 ## 3. 개발한 부분 
 - 동영상 플레이어 부분을 개발했습니다. 
-- 오픈소스([https://github.com/xiongwei-git/AndroidVideoPlayer])동영상플레이어를 보고, 코드를 분석하고 활용하여 사용 하였습니다
+- [오픈소스 동영상 플레이어](https://github.com/xiongwei-git/AndroidVideoPlayer)를 보고, 코드를 분석하고 활용하여 사용 하였습니다
 
 ## 4. 실행 화면
 Gif는 동영상 플레이어 부분만 나옵니다. Video를 클릭하시면 앱 전체 영상을 볼 수 있습니다.
