@@ -21,4 +21,6 @@ Gif는 동영상 플레이어 부분만 나옵니다. Video를 클릭하시면 �
 - Java
 - retorift2
 - RecyclerView
-- [오픈소스 동영상 플레이어](https://github.com/xiongwei-git/AndroidVideoPlayer)를 보고, 코드를 분석하고 활용하여 사용 하였습니다
+
+참고한 코드 
+- https://github.com/xiongwei-git/AndroidVideoPlayer
